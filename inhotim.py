@@ -76,16 +76,19 @@ def check_password():
     
     
     def login_form():
+
+    
         st.image('inhotim-logo.png', width=120)
         st.subheader(":white[Olá! Explore e descubra o Inhotim!]")
         st.write(":white[Sou um assistente criado para te auxiliar a planejar a sua visita e conheçer mais as obras do Inhotim. Antes de começar, insira seus dados de visitante:]")
-
+        
         with st.form("Credentials"):
             st.subheader("")
             st.text_input("Nome de Usuário", key="username", help="Para acessar a demo, peça suas credenciais ao Emídio.")
             st.text_input("Qual a sua senha?", type="password", key="password")
             st.form_submit_button("Viva o Inhotim!", on_click=password_entered)
-            
+
+    def password_entered():
         """Checks whether a password entered by the user is correct."""
         if st.session_state["username"] in st.secrets[
             "passwords"
@@ -98,7 +101,7 @@ def check_password():
             del st.session_state["username"]
         else:
             st.session_state["password_correct"] = False
-    
+
     # Return True if the username + password is validated.
     if st.session_state.get("password_correct", False):
         return True
@@ -108,14 +111,10 @@ def check_password():
     if "password_correct" in st.session_state:
         st.error("😕 Usuário desconhecido ou senha incorreta.")
     return False
-    
-    
 
-    def password_entered():
-        if not check_password():
-            st.stop()
-     
 
+if not check_password():
+    st.stop()
 
 #Controle de estados
 if "session_id" not in st.session_state: # Used to identify each session
@@ -290,4 +289,3 @@ if hasattr(st.session_state.run, 'status'):
     elif st.session_state.run.status == "completed":
         if audio_on:
             st.audio(audio_file_path, format='audio/mp3')
-
