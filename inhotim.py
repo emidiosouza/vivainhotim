@@ -38,7 +38,7 @@ st.markdown("""
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Serif:wght@600&display=swap');
 
 
-html, body, p {
+html, body, p, textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
