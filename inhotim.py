@@ -20,7 +20,7 @@ audio_on = False
 def generate_audio_from_text(tts_text):
     response = client.audio.speech.create(
         model="tts-1",
-        voice="nova",
+        voice="onyx",
         input=tts_text
     )
     # Salvar o arquivo de áudio
