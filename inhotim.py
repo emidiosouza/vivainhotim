@@ -114,7 +114,8 @@ def check_password():
     def password_entered():
         if not check_password():
             st.stop()
- st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
+     
+    st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
 
 #Controle de estados
 if "session_id" not in st.session_state: # Used to identify each session
