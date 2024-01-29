@@ -88,7 +88,7 @@ def check_password():
             st.text_input("Qual a sua senha?", type="password", key="password")
             st.form_submit_button("Viva o Inhotim!", on_click=password_entered)
 
-    def password_entered():
+  def password_entered():
         """Checks whether a password entered by the user is correct."""
         if st.session_state["username"] in st.secrets[
             "passwords"
@@ -111,6 +111,9 @@ def check_password():
     if "password_correct" in st.session_state:
         st.error("😕 Usuário desconhecido ou senha incorreta.")
     return False
+
+if not check_password():
+    st.stop()
     
 if not check_password():
     st.stop()
