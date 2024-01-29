@@ -81,13 +81,14 @@ def check_password():
         st.image('inhotim-logo.png', width=120)
         st.subheader(":white[Olá! Explore e descubra o Inhotim!]")
         st.write(":white[Sou um assistente criado para te auxiliar a planejar a sua visita e conheçer mais as obras do Inhotim. Antes de começar, insira seus dados de visitante:]")
-        st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
 
         with st.form("Credentials"):
             st.subheader("")
             st.text_input("Nome de Usuário", key="username", help="Para acessar a demo, peça suas credenciais ao Emídio.")
             st.text_input("Qual a sua senha?", type="password", key="password")
             st.form_submit_button("Viva o Inhotim!", on_click=password_entered)
+            
+            st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
 
     def password_entered():
         """Checks whether a password entered by the user is correct."""
