@@ -99,8 +99,6 @@ def check_password():
         else:
             st.session_state["password_correct"] = False
     
-    st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
-    
     # Return True if the username + password is validated.
     if st.session_state.get("password_correct", False):
         return True
@@ -116,6 +114,7 @@ def check_password():
     def password_entered():
 if not check_password():
     st.stop()
+ st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
 
 #Controle de estados
 if "session_id" not in st.session_state: # Used to identify each session
