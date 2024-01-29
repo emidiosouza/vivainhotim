@@ -76,8 +76,6 @@ def check_password():
     
     
     def login_form():
-
-    
         st.image('inhotim-logo.png', width=120)
         st.subheader(":white[Olá! Explore e descubra o Inhotim!]")
         st.write(":white[Sou um assistente criado para te auxiliar a planejar a sua visita e conheçer mais as obras do Inhotim. Antes de começar, insira seus dados de visitante:]")
@@ -100,7 +98,9 @@ def check_password():
             del st.session_state["username"]
         else:
             st.session_state["password_correct"] = False
-
+    
+    st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
+    
     # Return True if the username + password is validated.
     if st.session_state.get("password_correct", False):
         return True
@@ -111,12 +111,12 @@ def check_password():
         st.error("😕 Usuário desconhecido ou senha incorreta.")
     return False
     
-    st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
+    
 
     def password_entered():
 if not check_password():
     st.stop()
-    
+
 #Controle de estados
 if "session_id" not in st.session_state: # Used to identify each session
     st.session_state.session_id = str(uuid.uuid4())
