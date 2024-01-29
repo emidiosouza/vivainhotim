@@ -1,4 +1,4 @@
-# Aplicativo Streamlit com OpenAI
+# Viva Inhotim - Aplicativo Streamlit com OpenAI
 
 Este projeto é um aplicativo Streamlit que utiliza a API da OpenAI para interagir com os usuários, fornecendo respostas e informações com base nas consultas feitas. O aplicativo apresenta uma interface amigável e é ideal para demonstrações ou uso interativo.
 
