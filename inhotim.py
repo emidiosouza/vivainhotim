@@ -88,7 +88,7 @@ def check_password():
             st.text_input("Qual a sua senha?", type="password", key="password")
             st.form_submit_button("Viva o Inhotim!", on_click=password_entered)
             
-            st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
+        st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
 
     def password_entered():
         """Checks whether a password entered by the user is correct."""
