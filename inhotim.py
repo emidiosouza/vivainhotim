@@ -111,8 +111,7 @@ def check_password():
     if "password_correct" in st.session_state:
         st.error("😕 Usuário desconhecido ou senha incorreta.")
     return False
-
-
+st.video("https://www.youtube.com/watch?v=aE49SmVVX9c", format="video/mp4", start_time=0)
 if not check_password():
     st.stop()
 
