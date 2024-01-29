@@ -1,31 +1,48 @@
-# Kbot - Assistente Virtual da Kukac
+# Aplicativo Streamlit com OpenAI
 
-## Descrição
-Kbot é uma assistente virtual desenvolvido pela Kukac, capaz de auxiliar nas tarefas do dia a dia, fornecer orientações éticas e interagir de forma inteligente com os usuários. Esta assistente é baseada na tecnologia GPT-4 da OpenAI e oferece uma experiência de conversa natural.
+Este projeto é um aplicativo Streamlit que utiliza a API da OpenAI para interagir com os usuários, fornecendo respostas e informações com base nas consultas feitas. O aplicativo apresenta uma interface amigável e é ideal para demonstrações ou uso interativo.
 
-## Tecnologias Utilizadas
-- **Streamlit**: Para criar uma interface web interativa e amigável.
-- **OpenAI GPT-4**: Responsável pelo processamento avançado de linguagem natural.
+## Funcionalidades
+
+- Integração com a API da OpenAI.
+- Geração de áudio a partir de texto usando TTS (Text-to-Speech).
+- Autenticação de usuário.
+- Interface personalizada com CSS.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter o seguinte instalado:
+- Python 3.6 ou superior.
+- Streamlit.
+- Biblioteca OpenAI Python.
 
 ## Instalação
-Para utilizar o Kbot localmente, siga os seguintes passos:
 
-```
-# Clone o repositório
-git clone https://github.com/emidiosouza/kbot-assistente-virtual.git
+Para executar este projeto localmente, siga estas etapas:
 
-# Navegue até a pasta do projeto
-cd kbot-assistente-virtual
+1. Clone o repositório para sua máquina local:
+   \```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   \```
 
-# Instale as dependências
-pip install -r requirements.txt
+2. Navegue até o diretório do projeto e instale as dependências:
+   \```bash
+   cd seu-repositorio
+   pip install -r requirements.txt
+   \```
 
-# Execute a aplicação
-streamlit run kbot.py
-```
+3. Execute o aplicativo Streamlit:
+   \```bash
+   streamlit run seu_script.py
+   \```
+
+## Configuração
+
+- Certifique-se de adicionar suas chaves de API da OpenAI e outras configurações necessárias no arquivo `secrets.toml` ou defina-as como variáveis de ambiente.
 
 ## Uso
-Ao iniciar a aplicação, você terá acesso a uma interface web onde pode interagir com o Kbot. Basta digitar suas perguntas ou comentários, e o assistente responderá de forma inteligente, inclusive convertendo as respostas em áudio, caso deseje.
+
+Após iniciar o aplicativo, você pode interagir com a interface do Streamlit para fazer perguntas ou solicitações. O aplicativo processará suas entradas usando a API da OpenAI e fornecerá respostas em texto e áudio.
 
 ## Configuração
 Para utilizar as funcionalidades completas do Kbot, você precisará configurar sua chave de API em um arquivo de configuração apropriado. Você pode fazer isso alterando os campos necessários no arquivo config.toml, disponível em .streamlit nesse repositório. 
@@ -39,4 +56,4 @@ Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` pa
 ## Contato
 - **Autor**: Emídio Souza
 - **Email**: [emidio.souza@kukac.ai](mailto:emidio.souza@kukac.ai)
-"# vivainhotim" 
+"#vivainhotim" 
