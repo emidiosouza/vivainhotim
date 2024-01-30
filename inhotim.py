@@ -10,7 +10,7 @@ import hmac
 client = OpenAI()
 
 # Select the preferred model
-MODEL = "ft:gpt-3.5-turbo-1106:personal::8mjGjSD5"
+MODEL = "ft:gpt-3.5-turbo-1106:personal::8mjGjSD"
 
 # Inicialização da variável audio
 audio = None
