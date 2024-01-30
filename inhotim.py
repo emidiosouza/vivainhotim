@@ -38,7 +38,7 @@ st.markdown("""
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Serif:wght@600&display=swap');
 
 
-html, body, p, textarea {
+html, body, p, textarea, li{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
@@ -143,7 +143,7 @@ with st.sidebar:
 st.sidebar.header("Esse é o Viva Inhotim", divider='green')
 with st.sidebar: 	
     st.write("Sou um assistente de visitação do Inhotim, pronto pra te responder sobre nossas obras e instalações.")
-    st.write("Posso te ajudar a planejar uma visita especialmente planejada para você.")
+    st.write("Posso te ajudar a planejar uma visita especialmente pensada para você.")
     st.write("Conheço muita coisa sobre o Inhotim, então é só me enviar a pergunta ao lado que irei te responder.")
     st.link_button("COMPRE SEU INGRESSO", "https://bileto.sympla.com.br/event/89314/d/229088/s/1552683")
     audio_on = st.toggle('ÁUDIO', help="Aqui você pode ligar e desligar a voz da assistente")
