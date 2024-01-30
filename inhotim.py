@@ -228,8 +228,7 @@ elif hasattr(st.session_state.run, 'status') and st.session_state.run.status == 
             with st.chat_message(message.role):
                 for content_part in message.content:
                     message_text = content_part.text.value
-                    message_text = message_text.replace("R$", "R&amp;$")
-                    st.markdown(message_text)
+                    st.write(message_text)
 
 
 
